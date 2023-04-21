@@ -5,7 +5,7 @@ import Keyv from "keyv";
 
 
 const server = new ApolloServer({
-  cache: new KeyvAdapter(new Keyv("redis://...")),
+  cache: "bounded",
   typeDefs,
   resolvers,
 });

@@ -6,10 +6,9 @@ var server = new apollo_server_1.ApolloServer({
     cache: "bounded",
     typeDefs: schema_1.typeDefs,
     resolvers: schema_1.resolvers,
-    playground: true,
-    introspection:true
+    introspection: true
 });
 server
     .listen(process.env.PORT || 4000)
-    .then(function () { return console.log('Server is running on http://localhost:4000'); });
+    .then(function () { return console.log('Server is running on Heroku'); });
 //# sourceMappingURL=server.js.map

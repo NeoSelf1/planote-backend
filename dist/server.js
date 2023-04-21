@@ -8,6 +8,6 @@ var server = new apollo_server_1.ApolloServer({
     resolvers: schema_1.resolvers,
 });
 server
-    .listen()
+    .listen('0.0.0.0', process.env.PORT || 4000)
     .then(function () { return console.log('Server is running on http://localhost:4000'); });
 //# sourceMappingURL=server.js.map

@@ -2,7 +2,7 @@ import client from "../../client";
 
 export default {
     Mutation : {
-        createNote : async(_,{title,noteArray}) => {
+        createNote : async(_:any,{title,noteArray}:any) => {
             const existingNote = await client.note.findFirst({
                 where: {title},
               });

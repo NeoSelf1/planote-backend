@@ -2,7 +2,7 @@ import client from "../../client";
 
 export default {
     Mutation: {
-        deleteNote: async(_,{id})=> {
+        deleteNote: async(_:any,{id}:any)=> {
             const note = await client.note.findUnique({where:{id}})
             if (!note){
                 return {

@@ -1,0 +1,43 @@
+{
+  "name": "planote-backend",
+  "version": "1.0.0",
+  "description": "",
+  "dev": "",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/server --ext ts,js",
+    "migrate": "npx prisma migrate dev --preview-feature",
+    "studio":"npx prisma studio",
+    "build": "babel src --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeoSelf1/Planote-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeoSelf1/Planote-backend/issues"
+  },
+  "homepage": "https://github.com/NeoSelf1/Planote-backend#readme",
+  "dependencies": {
+    "@babel/cli": "^7.21.0",
+    "@graphql-tools/load-files": "^6.6.1",
+    "@graphql-tools/merge": "^8.4.0",
+    "@graphql-tools/schema": "^9.0.17",
+    "@prisma/client": "^4.12.0",
+    "apollo-server": "^3.12.0",
+    "dotenv": "^16.0.3",
+    "gitignore": "^0.7.0",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.4",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.12.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}

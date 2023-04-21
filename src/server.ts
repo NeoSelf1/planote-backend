@@ -6,6 +6,7 @@ const server = new ApolloServer({
   cache: "bounded",
   typeDefs,
   resolvers,
+  introspection:true
 });
 
 server

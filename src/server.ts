@@ -5,8 +5,7 @@ import { resolvers, typeDefs } from './schema';
 const server = new ApolloServer({
   cache: "bounded",
   typeDefs,
-  resolvers,
-  introspection:true
+  resolvers
 });
 
 server

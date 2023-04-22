@@ -5,8 +5,7 @@ var schema_1 = require("./schema");
 var server = new apollo_server_1.ApolloServer({
     cache: "bounded",
     typeDefs: schema_1.typeDefs,
-    resolvers: schema_1.resolvers,
-    introspection: true
+    resolvers: schema_1.resolvers
 });
 server
     .listen(process.env.PORT || 4000)

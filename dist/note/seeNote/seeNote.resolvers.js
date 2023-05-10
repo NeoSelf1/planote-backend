@@ -10,7 +10,6 @@ exports.default = {
             var offset = _a.offset;
             var notes = client_1.default.note.findMany({
                 orderBy: { createdAt: 'desc' },
-                take: 3,
                 skip: offset,
             });
             if (!notes) {

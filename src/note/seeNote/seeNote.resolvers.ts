@@ -4,7 +4,7 @@ export default {
   Query: {
     seeNote: (_:any, { offset }:any) => {
       const notes = client.note.findMany({
-        orderBy: { createdAt: 'desc' }
+        orderBy: { createdAt: 'desc' },
         skip: offset,
       });
       if (!notes) {

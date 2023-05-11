@@ -58,7 +58,7 @@ exports.default = {
                                 //만약 uglyPassword가 존재한다면, 두번째 블록으로 넘어감 == 뒤에 object를 반환함
                                 data: {
                                     title: title,
-                                    noteArray: noteArray
+                                    noteArray: noteArray,
                                 },
                             })];
                         case 1:

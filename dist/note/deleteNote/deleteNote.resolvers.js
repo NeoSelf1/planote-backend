@@ -53,8 +53,7 @@ exports.default = {
                             note = _b.sent();
                             if (!!note) return [3 /*break*/, 2];
                             return [2 /*return*/, {
-                                    ok: false,
-                                    error: "Note not found"
+                                    ok: false, error: "Note not found"
                                 }];
                         case 2: return [4 /*yield*/, client_1.default.note.delete({ where: { id: id } })];
                         case 3:

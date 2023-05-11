@@ -5,6 +5,6 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var apollo_server_express_1 = require("apollo-server-express");
-exports.default = (0, apollo_server_express_1.gql)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  type Mutation {\n    createNote(\n      title: String!\n      noteArray: String!\n    ): MutationResponse\n  }\n"], ["\n  type Mutation {\n    createNote(\n      title: String!\n      noteArray: String!\n    ): MutationResponse\n  }\n"])));
+exports.default = (0, apollo_server_express_1.gql)(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  type Mutation {\n    createNote(\n      title: String!\n      noteArray: String!\n      imgArray: String!\n    ): MutationResponse\n  }\n"], ["\n  type Mutation {\n    createNote(\n      title: String!\n      noteArray: String!\n      imgArray: String!\n    ): MutationResponse\n  }\n"])));
 var templateObject_1;
 //# sourceMappingURL=createNote.typeDefs.js.map

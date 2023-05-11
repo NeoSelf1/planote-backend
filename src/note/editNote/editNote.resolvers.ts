@@ -10,7 +10,7 @@ export default {
         {
             id,
           title,
-          noteArray,
+          noteArray
         }:any //모든
       ) => {
         //2. 매 mutation마다 verify를 하는 것은 매우 heavy한 설계이다. -> server.js에서 받은 token(authorization)을 util.js를

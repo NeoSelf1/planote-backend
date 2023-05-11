@@ -2,7 +2,7 @@ import client from "../../client";
 
 export default {
     Mutation : {
-        createNote : async(_:any,{title,noteArray,imgArray}:any) => {
+        createNote : async(_:any,{title,noteArray}:any) => {
             const existingNote = await client.note.findFirst({
                 where: {title},
               });
@@ -13,7 +13,6 @@ export default {
             await client.note.create({data: {
                 title,
                 noteArray,
-                imgArray
             }})
             return{
                 ok:true

@@ -5,7 +5,6 @@ export default gql`
     createNote(
       title: String!
       noteArray: String!
-      imgArray: String
     ): MutationResponse
   }
 `;

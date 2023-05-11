@@ -43,7 +43,7 @@ var client_1 = __importDefault(require("../../client"));
 exports.default = {
     Mutation: {
         createNote: function (_, _a) {
-            var title = _a.title, noteArray = _a.noteArray, imgArray = _a.imgArray;
+            var title = _a.title, noteArray = _a.noteArray;
             return __awaiter(void 0, void 0, void 0, function () {
                 var existingNote;
                 return __generator(this, function (_b) {
@@ -62,7 +62,6 @@ exports.default = {
                             return [4 /*yield*/, client_1.default.note.create({ data: {
                                         title: title,
                                         noteArray: noteArray,
-                                        imgArray: imgArray
                                     } })];
                         case 2:
                             _b.sent();

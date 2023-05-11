@@ -5,7 +5,6 @@ export default gql`
     id: Int!
     title: String!
     noteArray: String!
-    imgArray: String
   }
 `;
 

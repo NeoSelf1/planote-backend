@@ -45,7 +45,7 @@ exports.default = {
         createNote: function (_, _a) {
             var title = _a.title, noteArray = _a.noteArray, imgArray = _a.imgArray;
             return __awaiter(void 0, void 0, void 0, function () {
-                var existingNote;
+                var existingNote, newNote;
                 return __generator(this, function (_b) {
                     switch (_b.label) {
                         case 0: return [4 /*yield*/, client_1.default.note.findFirst({
@@ -65,9 +65,10 @@ exports.default = {
                                         imgArray: imgArray
                                     } })];
                         case 2:
-                            _b.sent();
+                            newNote = _b.sent();
                             return [2 /*return*/, {
-                                    ok: true
+                                    ok: true,
+                                    id: newNote.id
                                 }];
                     }
                 });

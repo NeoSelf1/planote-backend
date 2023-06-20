@@ -6,6 +6,11 @@ export default gql`
       title: String!
       noteArray: String!
       imgArray: String!
-    ): MutationResponse
+    ): CreateNoteResponse
   }
+  type CreateNoteResponse {
+    ok:Boolean!
+    id:Int
+    error:String
+}
 `;
